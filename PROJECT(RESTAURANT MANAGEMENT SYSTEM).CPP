@@ -74,9 +74,10 @@ class product
 
 
 //***************************************************************
-//    	function to write in file
+//    	function to write in file(Shop.dat)
 //****************************************************************
 
+// The Shop.dat is generated to store data. 
 void write_product()
    {
     fp.open("Shop.dat",ios::out|ios::app);
@@ -117,7 +118,7 @@ for(int i=0;i<11;i++)
 
 	gotoxy(25,15);
 	for(int j=0;j<i;j++)
-	cout<<"ÛÛ";
+	cout<<"Ã›Ã›";
 	for(int x=10-(i);x>0;x--)
 	cout<<"  ";
 
@@ -141,7 +142,7 @@ void load() //		displays a loading bar with a delay of  0.1 second
 	gotoxy(25,15);
 	for(int j=0;j<10;j++)
 	{
-		cout<<"ÛÛ";
+		cout<<"Ã›Ã›";
 		delay(100);
 
 	   }
